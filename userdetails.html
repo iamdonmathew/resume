@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/marklist.css">
+</head>
+
+<body onload="date()">
+    <section>
+        <center>
+            <div>
+                <h3>User Details</h3>
+                <hr>
+            </div>
+        </center>
+    </section>
+    <section>
+        <center>
+            <div>
+                <form method="POST" action="#" onsubmit="return CheckValidate()">
+                    <div>
+                        Name: <input type="text" name="name" placeholder="Enter your name" id="name" autocomplete="off">
+                        <br>
+                        <small id="errorname" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        DOB: <input type="date" name="dob" placeholder="Choose your DOB" id="dob" autocomplete="off">
+                        <br>
+                        <small id="errordate" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        Mobile: <input type="text" name="mobile" placeholder="Enter your mobile no" id="mobile"
+                            autocomplete="off" maxlength="10">
+                            <br>
+                        <small id="errormobile" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        Email: <input type="email" name="email" placeholder="Enter your email id" id="email"
+                            autocomplete="off">
+                            <br>
+                            <small id="erroremail" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        Gender: <input type="radio" name="gender" autocomplete="off" id="gender"> Male
+                        <input type="radio" name="gender" autocomplete="off" id="gender"> Female
+                        <br>
+                        <small id="errorgender" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        Percentage: <input type="text" name="percentage" id="percentage" autocomplete="off"
+                            placeholder="Enter your percentage">
+                            <br>
+                        <small id="errorpercentage" style="color: red; font-weight: bold;"></small>
+                    </div><br>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <br><br><br>
+                    <div>
+                        <a href="./index.html" class="btn shadow">go back -></a>
+                    </div>
+                </form>
+            </div>
+        </center>
+    </section>
+</body>
+
+</html>
